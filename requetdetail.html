@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REQUEST DETAIL</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  </style>
+  <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+  <link rel="icon" href="./img/word-image-1047.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- nabar -->
+  <div class="">
+    <div class="row navbar">
+      <!-- logo -->
+      <div class="col-sm-4 navbar-user-left d-flex align-items-center">
+        <div class="col-sm-5 logo">
+          <a href="#"><img src="./img/logo.png" height="80" alt="" /></a>
+        </div>
+        <!-- product-list -->
+        <div class="">
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center user-info" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+              <p class="product-list">Product</p>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Laptop</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Camera</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Graphic Tablet</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Tablet</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center navbar-user-fill"></div>
+      <!-- card-icon -->
+      <div class="col-sm-4 text-center navbar-user-right d-flex">
+        <div class="col-sm-6 card-shopping">
+          <a href="card.html" class="" role="button">
+            <i class="fas fa-shopping-cart text-dark ml-5"></i>
+          </a>
+        </div>
+        <!-- welcome -->
+        <div class="col-sm-6">
+          <div class="nav-item dropdown align-items-center">
+            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center user-info" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+              <img src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t1.6435-9/148200636_528659258096027_8966625421411191162_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dzMdGh7CUt4AX978A2p&_nc_ht=scontent.fsgn5-11.fna&oh=00_AT_T8cl7XJeQ7xnVIt7NSbBeFkMmZy_8FtaihBZKvwhxjw&oe=62BB3767" class="rounded-circle" height="25"/>
+              <p class="user-name">Thienpnse150137</p>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="myprofile.html">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="login.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="text-center requestid">
+      <p>SE01</p>
+    </div>
+  </div>
+  <!-- table -->
+  <div class="container">
+    <div class="table table-all container table-user">
+      <table class="col-sm-12">
+        <thead>
+          <th class="text-center">Device ID</th>
+          <th class="text-center">Device Name</th>
+          <th class="text-center">Quantity</th>
+          <th class="text-center">Borrow Date</th>
+          <th class="text-center">expiredDate</th>
+          <th class="text-center">
+            Details
+          </th>
+          <th class="text-center">status</th>
+        </thead>
+        <tbody>
+          <td class="text-center">
+            <p>LT01</p>
+          </td>
+          <td class="text-center">
+            <p>Asus</p>
+          </td>
+          <td class="text-center">
+            <p>20</p>
+          </td>
+          <td class="text-center">
+            <p>10/5/2022</p>
+          </td>
+          <td class="text-center">
+            <p>20/10/2022</p>
+          </td>
+          <td class="text-center">
+            <a href="#" id="fa-info-circle">
+              <button class="btn " type="button"><i
+                    class="fas fa-info-circle"></i></button></a>
+            <div id="detailModal" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-lg" role="content">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Details modal</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-sm-12 d-flex">
+                          <h5 class="">CPU</h5>
+                          <label for="" class="col-sm-6 text-center">Core Intrel I9-12900k</label>
+                        </div>
+                        <div class="form-group col-sm-12 d-flex">
+                          <h5>SSD</h5>
+                          <label for="" class="col-sm-6">1TB</label>
+                        </div>
+                        <div class="form-group col-sm-12 d-flex">
+                          <h5>RAM</h5>
+                          <label for="" class="col-sm-6">128GB</label>
+                        </div>
+                        <div class="form-group col-sm-12 d-flex">
+                          <h5>VGA</h5>
+                          <label for="" class="col-sm-6">RTX3090</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="text-center">
+            <p>Processing</p>
+          </td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<footer>
+  <section>CONTACT FOR ME</section>
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>Company<span>DRS</span></h3>
+
+      <p class="footer-company-name">Company DRS © 2022</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Đại học FPT</span> KCN - TP.Thủ Đức - TP.HCM</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>3463452343</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:admin@gmail.com">admin@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Yếu các bé của anh
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="https://www.facebook.com/"><i class="ti-facebook"></i></a>
+        <a href="https://www.twitter.com/"><i class="ti-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
+        <a href="https://www.github.com/"><i class="ti-github"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+</footer>
+
+<script>
+  $(document).ready(function () {
+    $("#fa-info-circle").click(function () {
+      $("#detailModal").modal("show");
+    });
+  })
+</script>
+
+</html>
