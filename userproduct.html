@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devices</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+    </style>
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css" />
+    <link rel="icon" href="./img/word-image-1047.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- nabar -->
+    <!-- <div class="container"> -->
+      <div class="row navbar">
+        <!-- logo -->
+        <div class="col-sm-4 navbar-user-left d-flex align-items-center">
+          <div class="col-sm-5 logo">
+            <a href="#"><img src="./img/logo.png" height="80" alt="" /></a>
+          </div>
+          <!-- product-list -->
+          <div class="">
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center user-info" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+                <p class="product-list">Product</p>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="userproduct.html">Laptop</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="userproduct.html">Camera</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="userproduct.html">Graphic Tablet</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="userproduct.html">Tablet</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="userproduct.html">All Product</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 text-center navbar-user-fill"></div>
+        <!-- card-icon -->
+        <div class="col-sm-4 text-center navbar-user-right d-flex">
+          <div class="col-sm-6 card-shopping">
+            <a href="card.html" class="" role="button">
+              <i class="fas fa-shopping-cart text-dark ml-5"></i>
+            </a>
+          </div>
+          <!-- welcome -->
+          <div class="col-sm-6">
+            <div class="nav-item dropdown align-items-center">
+              <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center user-info" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+                <img src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t1.6435-9/148200636_528659258096027_8966625421411191162_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dzMdGh7CUt4AX978A2p&_nc_ht=scontent.fsgn5-11.fna&oh=00_AT_T8cl7XJeQ7xnVIt7NSbBeFkMmZy_8FtaihBZKvwhxjw&oe=62BB3767" class="rounded-circle" height="25"/>
+                <p class="user-name">Thienpnse150137</p>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="myprofile.html">My profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="login.html">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search-button -->
+      <div class="row navbar-option col-sm-12 justify-content-center">
+        <div class="container mt-2 mb-3">
+          <a href="#" id="chosefilter">
+            <button class="btn insertnew btn-color" type="button">
+                <i class="filer-icon fa fa-filter"></i>
+                <label class="button-insert">Filter</label>
+            </button>
+        </a>
+        <div id="FilterModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg" role="content">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Chose Filter</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="form-row">
+                             <div class="row col-12">
+                              <div class="">
+                                <p>Đã chọn :</p>
+                              </div>
+                                <div class="col-12">
+                                  <h4>Brand</h4>
+                                  <div class="col-12 ">
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex mt-3">
+                                  <h4 class="col-6">Ram</h4>
+                                  <h4 class="col-6">Chip</h4>
+                                </div>
+                                <div class="col-12 d-flex">
+                                  <div class="col-6">
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                  </div>
+                                  <div class="col-6">
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                  </div>
+                                </div>
+                                <div class="col-12 d-flex mt-3">
+                                  <h4 class="col-6">Ram</h4>
+                                  <h4 class="col-6">Chip</h4>
+                                </div>
+                                <div class="col-12 d-flex">
+                                  <div class="col-6">
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                  </div>
+                                  <div class="col-6">
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                    <input type="checkbox" name="" id="">
+                                    <button type="button"> hello</button>
+                                  </div>
+                                </div>
+                             </div>
+                           <div class="col-12 d-flex">
+                              <div class="col-6 mt-3">
+                                <button class="btn-filter btn btn-danger">Cancel</button>
+                              </div>
+                              <div class="col-6 mt-3">
+                                <button class="btn-filter btn btn-color">Search</button>
+                              </div>
+                           </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+        <div class="col-sm-10">
+          <div class="table table-user">
+            <table class="col-sm-12" id="myTable">
+              <thead>
+                <th class="text-center">STT</th>
+                <th class="text-center">Devices ID</th>
+                <th class="text-center">Devices Name</th>
+                <th class="text-center">WarehouseName</th>
+                <th class="text-center">Brand</th>
+                <th class="text-center">Quantity</th>
+                <th class="text-center">Detail</th>
+                <th class="text-center">Action</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">01</td>
+                  <td class="text-center">SE01</td>
+                  <td class="text-center">12/02/2022</td>
+                  <td class="text-center">Active</td>
+                  <td class="text-center">Active</td>
+                  <td class="text-center">Active</td>
+                  <td class="text-center"><button type="button">Detail</button></td>
+                  <td class="text-center"><button type="button">Borrow</button></td>
+                </tr>
+                <tr>
+                  <td class="text-center">01</td>
+                  <td class="text-center">SE01</td>
+                  <td class="text-center">12/02/2022</td>
+                  <td class="text-center">Active</td>
+                  <td class="text-center">Active</td>
+                  <td class="text-center">Active</td>
+                  <td class="text-center"><button type="button">Detail</button></td>
+                  <td class="text-center"><button type="button">Borrow</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    <footer></footer>
+    <script>
+      $(document).ready(function () {
+        $("#chosefilter").click(function () {
+            $("#FilterModal").modal("show");
+        });
+      });
+  </script>
+  </body>
+</html>
