@@ -17,12 +17,13 @@ div a:hover {
 }
 
 html {
-	height: auto;
+	height: 100vh;
 }
 
 
 body {
 	font-size: 18px;
+	height: 100vh;
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
 	color: #000000;
