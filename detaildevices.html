@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devices</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+  </style>
+  <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css" />
+  <link rel="icon" href="./img/word-image-1047.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- nabar -->
+  <div class="row navbar">
+    <!-- logo -->
+    <div class="col-sm-4 navbar-user-left d-flex align-items-center">
+      <div class="col-sm-5 logo">
+        <a href="#"><img src="./img/logo.png" height="80" alt="" /></a>
+      </div>
+      <!-- product-list -->
+      <div class="">
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-center user-info" href="#"
+            id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+            <p class="product-list">Product</p>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="userproduct.html">Laptop</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="userproduct.html">Camera</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="userproduct.html">Graphic Tablet</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="userproduct.html">Tablet</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="userproduct.html">All Product</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 text-center navbar-user-fill"></div>
+    <!-- card-icon -->
+    <div class="col-sm-4 text-center navbar-user-right d-flex">
+      <div class="col-sm-6 card-shopping">
+        <a href="cart.html" role="button">
+          <i class="fas fa-shopping-cart text-dark ml-5 mt-2"></i>
+        </a>
+      </div>
+      <!-- welcome -->
+      <div class="col-sm-6">
+        <div class="nav-item dropdown align-items-center">
+          <a class="nav-link dropdown-toggle d-flex align-items-center user-info" href="#" id="navbarDropdownMenuLink"
+            role="button" data-toggle="dropdown">
+            <img src="img/anhtai.jpg" class="rounded-circle" height="35" width="35">
+            <p class="user-name">Anh Tai</p>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#"><img src="img/anhtai.jpg" height="35"> My profile</a>
+          </li>
+            <li>
+              <a class="dropdown-item" href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="detail-devices-wapper d-flex row">
+    <div class="col-sm-7 order-first">
+      <img class="img-devices" src="img/macbook.png" id="main-img">
+      <div class="col-sm-12 ml-5">
+        <p>
+          <img class="img-many" src="img/macbook.png">
+          <img class="img-many" src="img/macbook1.png">
+          <img class="img-many" src="img/macbook2.png">
+          <img class="img-many" src="img/macbook3.png">
+        </p>
+      </div>
+    </div>
+    <div class="row detail-devices col-sm-5 mt-5">
+      <div class="divices-name col-sm-12 mt-5">
+        <h2>MacBook Pro Bla Bla Bla</h2>
+        <br />
+      </div>
+      <div class="col-sm-12">
+        <p>Devices ID : 01</p>
+        <p>Warehous : HCM - HN</p>
+        <p>Brand Name : Apple</p>
+        <p>Quantity : 1000</p>
+        <div class="buttons_added">
+          <p>Amount: </p>
+          <input class="minus is-form ml-3" type="button" value="-">
+          <input aria-label="quantity" class="input-qty" max="100" min="1" name="" type="number" value="1">
+          <input class="plus is-form" type="button" value="+">
+        </div>
+        </span>
+        <div class="col-sm-12 mt-5">
+          <button class="rent-button"><i class="fas fa-shopping-cart"></i> Add to Card</button>
+          <button class="rent-button-1">Rent Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <h2 class="ml-5 mt-5">PRODUCT DESCRIPTION</h2>
+      <div class="ml-5">
+        <p>Specifications:</p>
+        <p>Brand: Apple</p>
+        <p>CPU: M1</p>
+        <p>Ram: 16Gb</p>
+        <p>Hard Drive: 512GB SSD</p>
+        <p>Pin: 5000mh</p>
+        <p>Screen: 4K OLED</p>
+        <p>Connection ports:</p>
+        <p>1x USB 3.2</p>
+        <p>2x USB 2.0 Micro SD 4.0 card readers</p>
+        <p>1x HDMI 1.4</p>
+      </div>
+    </div>
+    <div class="col-sm-12">
+
+    </div>
+  </div>
+
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <h3>Company<span>DRS</span></h3>
+      <p class="footer-company-name">Company DRS © 2022</p>
+    </div>
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Đại học FPT</span> KCN - TP.Thủ Đức - TP.HCM</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>3463452343</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:admin@gmail.com">admin@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the company</span>
+        The company specializes in providing and leasing IT equipment to businesses and companies in need.
+      </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/"><i class="ti-facebook"></i></a>
+        <a href="https://www.twitter.com/"><i class="ti-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="ti-instagram"></i></a>
+        <a href="https://www.github.com/"><i class="ti-github"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    $('input.input-qty').each(function () {
+      var $this = $(this),
+        qty = $this.parent().find('.is-form'),
+        min = Number($this.attr('min')),
+        max = Number($this.attr('max'))
+      if (min == 0) {
+        var d = 0
+      } else d = min
+      $(qty).on('click', function () {
+        if ($(this).hasClass('minus')) {
+          if (d > min) d += -1
+        } else if ($(this).hasClass('plus')) {
+          var x = Number($this.val()) + 1
+          if (x <= max) d += 1
+        }
+        $this.attr('value', d).val(d)
+      })
+    })
+    $(() => {
+      $('p img').click(function () {
+        let imgPatch = $(this).attr('src');
+        $('#main-img').attr('src', imgPatch);
+      })
+    })
+  </script>
+</body>
+
+</html>

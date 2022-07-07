@@ -18,6 +18,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/fonts/fontawesome-free-6.1.1-web/css/all.min.css" />
 </head>
 
 <body>
@@ -37,16 +38,16 @@
                 <div class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle d-flex align-items-center user-info" href="#"
                         id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
-                        <img src="img/anhtai.jpg"
-                            class="rounded-circle" height="30" width="30">
+                        <img src="img/anhtai.jpg" class="rounded-circle" height="35" width="35">
                         <p class="user-name">Anh Tai</p>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li>
-                            <a class="dropdown-item" href="myprofile.html">My profile</a>
+                            <a class="dropdown-item" href="#"><img src="img/anhtai.jpg" height="35"> My profile</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="login.html">Logout</a>
+                            <a class="dropdown-item" href="login.html"><i class="fa-solid fa-right-to-bracket"></i>
+                                Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -67,7 +68,7 @@
         </div>
     </div>
     <!-- table -->
-    <div class="table-all">
+    <div class="table-all d-flex">
         <div class="table-wapper col-sm-12">
             <table class="table text-center">
                 <thead>
@@ -461,7 +462,60 @@
                             </div>
                         </td>
                     </tr>
-                    
+                    <tr>
+                        <td>01</td>
+                        <td>Phạm Hữu Dương</td>
+                        <td>SE150137</td>
+                        <td>05748954542</td>
+                        <td>admin@fpt.edu.vn</td>
+                        <td>AD</td>
+                        <td>Active</td>
+                        <td id="chosefilter" onclick=Show()><button type="button" class="btn btn-success"><i
+                                    class="fas fa-recycle"></i></button>
+                            <div id="FilterModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-lg" role="content">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Chose Filter</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Phone</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Phone">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Email</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Email">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Role</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Role">
+                                                    </div>
+                                                    <div class="form-group col-sm-12 d-flex">
+                                                        <h5 class="col-sm-4">Status</h5>
+                                                        <input class="col-sm-6" type="text"
+                                                            placeholder="Input new Status">
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <button class="btn btn-success col-sm-4">
+                                                            Update
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

@@ -173,9 +173,9 @@ a {
 	min-height: 600px;
 }
 .table{
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	margin-top: 0;
-	height: 59vh;
+	/* height: 59vh; */
 	width: 100%;
     max-width: 100%;
     margin-bottom: 1rem;
@@ -526,6 +526,10 @@ select#cars {
 	max-width: 150px;
 	min-height: 38px;
 }
+.inputmanager1{
+	max-width: 70px;
+	min-height: 38px;
+}
 
 .manager-function .left-function .insert .insertnew {
 	padding: 15px;
@@ -557,7 +561,7 @@ select#cars {
 		width: 100%;
 	}
 	#input-devicename{
-		min-width: 384px;
+		min-width: 460px;
 	}
 	
 }
@@ -586,9 +590,9 @@ select#cars {
 	font-size: 22px;
 }
 .navbar-col{
-	padding: 0;
 	background: linear-gradient(210.09deg, rgb(83, 176, 228)31.28% ,rgb(110, 251, 124) 65.92%);
 	border-bottom-right-radius: 5px;
+	padding-right: 0px;
 }
 .navbar-option{
 	padding: 0;
@@ -603,6 +607,7 @@ select#cars {
 	padding-top: 30%;
 	padding-left: 40%;
 	font-size: 25px;
+	
 }
 .fas-option{
 	color: #fff;
@@ -661,4 +666,213 @@ select#cars {
 	height: 50px;
 	margin-top: 20px;
 }
-
+.dasboard-btn{
+	padding: 6px 15px;
+	border-radius: 5px;
+	border: #000 solid 1px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300px;
+}
+.chart{
+	width: 450px;
+}
+.chart2{
+	position: absolute;
+	left: 30%;
+	width: 1000px;
+}
+.sibar-admin ul{
+	background: linear-gradient(210.09deg, rgb(110, 251, 124) 31.28%, rgb(83, 176, 228) 65.92%);
+}
+.option-admin{
+	margin-right: 60px;
+	color: #fff;
+	margin-top: 10%;
+}
+.img-devices{
+	width: 100%;
+	height: 550px;
+}
+.detail-devices{
+	height: 100%;
+	width: 100%;
+}
+.detail-devices-wapper{
+	width: 100%;
+}
+.rennow-button{
+	padding: 16px;
+	border-radius: 3px;
+	border: #000 solid 1px;
+	color: #fff;
+	background: linear-gradient(210.09deg, rgb(110, 251, 124) 31.28%, rgb(83, 176, 228) 65.92%);
+}
+.brand-select1,.brand-select2,.brand-select3,.brand-select4,.ram-select1,.ram-select2,.ram-select3,.ram-select4,.chip-select1,.chip-select2,.chip-select3,.chip-select4,.chip-select5
+{
+	display: none;
+}
+.brand-1,.brand-2,.brand-3,.brand-4,.ram-1,.ram-2,.ram-3,.ram-4,.chip-1,.chip-2,.chip-3,.chip-4,.chip-5,.display-1,.display-2
+{
+	border: #000 solid 1px;
+	padding: 3px 10px;
+	border-radius: 5px;
+	font-size: 18px;
+	min-width: 100px;
+	text-align: center;
+}
+.brand-select1:checked ~ .brand-1,.brand-select2:checked ~ .brand-2,.brand-select3:checked ~ .brand-3,.brand-select4:checked ~ .brand-4,.ram-select1:checked ~ .ram-1,.ram-select2:checked ~ .ram-2,
+.ram-select3:checked ~ .ram-3,.ram-select4:checked ~ .ram-4,.chip-select1:checked ~ .chip-1,.chip-select2:checked ~ .chip-2,.chip-select3:checked ~ .chip-3,.chip-select4:checked ~ .chip-4,
+.chip-select5:checked ~ .chip-5
+{
+	border: rgb(246, 6, 6) solid 3px;
+	font-size: 18px;
+}
+.fa-times{
+	font-size: 12px;
+	float: right;
+	margin-top: 7px;
+	margin-right: 2px;
+}
+#chose-ram-1,#chose-ram-2,#chose-ram-3,#chose-ram-4,#chose-brand-2,#chose-brand-3,#chose-brand-4,#chose-brand-1,#chose-chip-1,#chose-chip-2,#chose-chip-3,#chose-chip-4,#chose-chip-5
+{
+	display: none;
+	padding: 0;
+	min-width: 100px;
+}
+.img-product{
+	width: 150px;
+}
+.rent-button{
+	min-height: 55px;
+	margin-right: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	font-size: 22px;
+}
+.rent-button-1{
+	min-height: 55px;
+	border-radius: 5px;
+	background: linear-gradient(210.09deg, rgb(110, 251, 124) 31.28%, rgb(83, 176, 228) 65.92%);
+	color: #000;
+	font-size: 20px;
+	margin-left: 50px;
+}
+.buttons_added {
+    opacity:1;
+    display:inline-block;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    white-space:nowrap;
+    vertical-align:top;
+}
+.is-form {
+    overflow:hidden;
+    position:relative;
+    background-color:#f9f9f9;
+    height:2.2rem;
+    width:1.9rem;
+    padding:0;
+    text-shadow:1px 1px 1px #fff;
+    border:1px solid #ddd;
+}
+.is-form:focus,.input-text:focus {
+    outline:none;
+}
+.is-form.minus {
+    border-radius:4px 0 0 4px;
+}
+.is-form.plus {
+    border-radius:0 4px 4px 0;
+}
+.input-qty {
+    background-color:#fff;
+    height:2.2rem;
+    text-align:center;
+    font-size:1rem;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-left:0;
+    border-right:0;
+    padding:0;
+}
+.input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+.img-many{
+	width: 160px;
+	height: 100px;
+	margin-right: 15px;
+}
+.img-many:hover{
+	border: red solid 3px;
+}
+.sibar-admin ul li {
+	padding: 15px 0px;
+}
+.file label{
+	padding: 15px;
+}
+.fa-file-image-o{
+	color: #000;
+}
+#file{
+	display: none;
+}
+.file{
+	border: #000 solid 1px;
+	padding: 4px 0px;
+}
+.fa-file-image{
+	align-items: start;	
+}
+.manager-function{
+	width: 100%;
+}
+.col-sm-12 .choose-manager-tittle{
+	padding: 0;
+	width: 90%;
+}
+.option-staff{
+	min-width: 150px
+}
+.button-rent{
+	padding: 5px 35px;
+	border-radius: 5px;
+	float: right;
+	border: none;
+}
+.button-home{
+	padding: 9px 35px;
+	border-radius: 5px;
+	border: none;
+}
+.button-detail{
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+.img-product-manager{
+	width: 150px;
+	height: 100px;
+}
+.img-manager{
+	width: 150px;
+}
+.imgmanager{
+	width: 145px;
+}
+.input-model{
+	width: 100%;
+}
+.update-model{
+	width: 100%;
+	padding: 5px 0px;
+	border-radius: 5px;
+}
+#update-img{
+	display: none;
+}

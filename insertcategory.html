@@ -18,6 +18,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+
 </head>
 
 <body>
@@ -36,16 +38,16 @@
                 <div class="nav-item dropdown ">
                     <a class="nav-link dropdown-toggle d-flex align-items-center user-info" href="#"
                         id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
-                        <img src="img/anhtai.jpg"
-                            class="rounded-circle" height="30" width="30">
+                        <img src="img/anhtai.jpg" class="rounded-circle" height="35" width="35">
                         <p class="user-name">Anh Tai</p>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li>
-                            <a class="dropdown-item" href="myprofile.html">My profile</a>
+                            <a class="dropdown-item" href="#"><img src="img/anhtai.jpg" height="35"> My profile</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="login.html">Logout</a>
+                            <a class="dropdown-item" href="login.html"><i class="fa-solid fa-right-to-bracket"></i>
+                                Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -97,8 +99,8 @@
                                         <input class="col-sm-6" type="text" placeholder="Input new Cate Name">
                                     </div>
                                     <div class="col-sm-12">
-                                        <button class="btn btn-success col-sm-4"> 
-                                            Insert                      
+                                        <button class="btn btn-success col-sm-4">
+                                            Insert
                                         </button>
                                     </div>
                                 </div>
@@ -158,11 +160,13 @@
                     <td><input type="text" class="text-center manage-input" value="01"></td>
                     <td><input type="text" class="text-center manage-input" value="01"></td>
                     <td><input type="text" class="text-center manage-input" value="01"></td>
-                    <td><button type="button" class="btn btn-danger" onclick= Delete()><i class="fas fa-trash-alt"></i></button></td>
+                    <td><button type="button" class="btn btn-danger" onclick=Delete()><i
+                                class="fas fa-trash-alt"></i></button></td>
                     <td><button type="button" class="btn btn-success"><i class="fas fa-recycle"></i></button></td>
                     <td>
                         <a href="#" id="insert-new-description">
-                            <button class="btn " type="button"><i class="fas fa-plus-circle"> Insert New Description</i></button>
+                            <button class="btn " type="button"><i class="fas fa-plus-circle"></i><span> Insert New
+                                    Description</span></button>
                         </a>
                         <div id="detailModal-description" class="modal fade" role="dialog">
                             <div class="modal-dialog modal-lg" role="content">
@@ -180,8 +184,8 @@
                                                     <input class="col-sm-6" type="text" placeholder="Input new Cate ID">
                                                 </div>
                                                 <div class="col-sm-12">
-                                                    <button class="btn btn-success col-sm-4"> 
-                                                        Insert                      
+                                                    <button class="btn btn-success col-sm-4">
+                                                        Insert
                                                     </button>
                                                 </div>
                                             </div>
@@ -193,8 +197,8 @@
                     </td>
                     <td>
                         <a href="#" id="insert-new-detail"><button class="btn btn-light" id="dropdown-firsttable">
-                            <i class="fas fa-caret-down" id="btn-cartdown"></i>
-                        </button></a>
+                                <i class="fas fa-caret-down" id="btn-cartdown"></i>
+                            </button></a>
                         <div id="detailModal-detail" class="modal fade" role="dialog">
                             <div class="modal-dialog modal-lg" role="content">
                                 <!-- Modal content-->
@@ -217,28 +221,34 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td><p class="mt-2">Ram</p></td>
+                                                            <td>
+                                                                <p class="mt-2">Ram</p>
+                                                            </td>
                                                             <td>
                                                                 <select class="col-sm-12 mt-2 pt-1 pb-1">
                                                                     <option selected disabled>Chose Details</option>
                                                                     <option value="#">8GB</option>
-                                                                    <option value="#">16GB</option> 
+                                                                    <option value="#">16GB</option>
                                                                 </select>
                                                             </td>
                                                             <td>
-                                                                <input class="col-sm-8 mt-2" id="input-insertdetail" type="text" placeholder="Insert New Detail">
-                                                                <button type="submit" class="btn btn-success" id="btn-insertdetail">Insert</button>
+                                                                <input class="col-sm-8 mt-2" id="input-insertdetail"
+                                                                    type="text" placeholder="Insert New Detail">
+                                                                <button type="submit" class="btn btn-success"
+                                                                    id="btn-insertdetail">Insert</button>
                                                             </td>
                                                             <td>
-                                                                <a href="#" >
-                                                                    <button class="btn btn-success" id="btn-check" type="submit">
+                                                                <a href="#">
+                                                                    <button class="btn btn-success" id="btn-check"
+                                                                        type="submit">
                                                                         <i class="fas fa-recycle"></i>
                                                                     </button>
                                                                 </a>
                                                             </td>
                                                             <td>
-                                                                <a href="#" >
-                                                                    <button class="btn btn-danger" id="btn-check" type="submit">
+                                                                <a href="#">
+                                                                    <button class="btn btn-danger" id="btn-check"
+                                                                        type="submit">
                                                                         <i class="fas fa-trash-alt"></i>
                                                                     </button>
                                                                 </a>
@@ -247,21 +257,24 @@
                                                     </tbody>
                                                     <tbody>
                                                         <tr>
-                                                            <td><p class="mt-1">Main</p></td>
                                                             <td>
-                                                                <input class="col-sm-12 mt-1" type="text" value="" placeholder="Input New Details">
+                                                                <p class="mt-1">Main</p>
+                                                            </td>
+                                                            <td>
+                                                                <input class="col-sm-12 mt-1" type="text" value=""
+                                                                    placeholder="Input New Details">
                                                             </td>
                                                             <td></td>
                                                             <td>
                                                                 <a href="#"><button class="btn btn-success">
-                                                                    <i class="fas fa-recycle"></i>
-                                                                </button>
+                                                                        <i class="fas fa-recycle"></i>
+                                                                    </button>
                                                                 </a>
                                                             </td>
                                                             <td>
                                                                 <a href="#"><button class="btn btn-danger">
-                                                                    <i class="fas fa-trash-alt"></i>
-                                                                </button>
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
                                                                 </a>
                                                             </td>
                                                         </tr>
@@ -275,10 +288,10 @@
                         </div>
                     </td>
                 </tr>
-                
+
             </tbody>
         </table>
-</div>
+    </div>
 </body>
 <footer></footer>
 <script>
@@ -297,8 +310,8 @@
     });
 
     function Delete() {
-      $("#info").remove();
-       }
+        $("#info").remove();
+    }
 </script>
 
 </html>
